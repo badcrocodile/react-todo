@@ -85,7 +85,11 @@ function TodoList(props) {
       </div>
 
       <div className='other-buttons-container'>
-        <TodoFilters todosFiltered={props.todosFiltered} filter={props.filter} setFilter={props.setFilter} />
+        <TodoFilters
+          todosFiltered={props.todosFiltered}
+          filter={filter}
+          setFilter={setFilter}
+        />
         <div>
           <TodoClearCompleted clearCompleted={props.clearCompleted} />
         </div>
